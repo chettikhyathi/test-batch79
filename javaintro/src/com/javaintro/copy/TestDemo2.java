@@ -1,0 +1,22 @@
+package com.javaintro.copy;
+
+public class TestDemo2 {
+	
+	static int a =10;
+	static {
+		System.out.println("Static block1 loaded");
+	}
+	static {
+		System.out.println("Static block2 loaded");
+	}
+	public static void main(String[] args) {
+		
+		System.out.println("Main method started");
+		System.out.println(a);
+	}
+	
+	static {
+		System.out.println("static block3 loaded");
+	}
+
+}
