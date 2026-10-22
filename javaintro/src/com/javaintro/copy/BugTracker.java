@@ -9,25 +9,25 @@ public class BugTracker {
 	String status;
 	String assignedDeveloper;
 	void getBugId() {
-		System.out.println("The Bug ID is:"+bugid);
+		//System.out.println("The Bug ID is:"+bugid);
 	}
 	void getApplicationName() {
-		System.out.println("The application name is:"+applicationName);
+		//System.out.println("The application name is:"+applicationName);
 	}
 	void getBugTitle() {
-		System.out.println("The Bug Title is:"+bugTitle);
+		//System.out.println("The Bug Title is:"+bugTitle);
 	}
 	void getSeverity() {
-		System.out.println("The severity is:"+severity);
+		//System.out.println("The severity is:"+severity);
 	}
 	void getPriority() {
-		System.out.println("The priority is:"+priority);
+		//System.out.println("The priority is:"+priority);
 	}
 	void getStatus() {
-		System.out.println("The Status is:"+status);
+		//System.out.println("The Status is:"+status);
 	}
 	void getAssignedDeveloper() {
-		System.out.println("The assigned developer is:"+assignedDeveloper);
+		//System.out.println("The assigned developer is:"+assignedDeveloper);
 	}
 	void getUpdateAssignedDeveloper(int bugid1,String newDeveloper) {
 		bugid=bugid1;
@@ -36,6 +36,15 @@ public class BugTracker {
 	void getUpdateStatus(int bugid2,String newStatus) {
 		bugid=bugid2;
 		status=newStatus;
+	}
+	void displayBugSummary() {
+		System.out.println("The Bug ID is:"+bugid);
+		System.out.println("The application name is:"+applicationName);
+		System.out.println("The Bug Title is:"+bugTitle);
+		System.out.println("The severity is:"+severity);
+		System.out.println("The priority is:"+priority);
+		System.out.println("The Status is:"+status);
+		System.out.println("The assigned developer is:"+assignedDeveloper);
 	}
 	public static void main(String[] args) {
 		BugTracker b =new BugTracker();
@@ -57,7 +66,6 @@ public class BugTracker {
 		b.getAssignedDeveloper();
 		b.getUpdateStatus(12,"Developed");
 		b.getStatus();
+		b.displayBugSummary();
 	}
-	
-
 }
