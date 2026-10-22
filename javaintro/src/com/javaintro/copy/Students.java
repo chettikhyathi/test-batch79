@@ -18,7 +18,6 @@ public class Students {
 			System.out.println("Name: "+Name + " ,Id: "+Id+" ,Marks: "+Marks+" ,EmailId: "+EmailId);
 		}
 		static void College() {
-			//System.out.println("College: Raghu");
 			System.out.println("State: Andhra");
 			System.out.println("Area: Visakhaptanam");
 		}
